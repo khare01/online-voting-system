@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>University Homepage</title>
+    <style>
+        /* Reset styles */
+        .first {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("img/back.jpg");
+            padding-top: 10vh;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome {
+            position: absolute;
+            transform: translate(70vw, 20vh);
+            align-items: center;
+            text-align: center;
+        }
+
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+
+            justify-content: space-between;
+            padding: 20px;
+            /* filter: blur(8px);
+            -webkit-filter: blur(8px); */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 50px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .button {
+            width: 171px;
+            text-align: center;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ef7e1c;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease-in-out;
+        }
+        
+        .button:hover {
+            color: #ef7e1c;
+            background-color: #ffffff;
+        }
+
+        .button a {
+            text-decoration: none;
+        }
+
+        .image_hands {
+            /* position: fixed; */
+            width: 24vw;
+        }
+
+        .neon-text {
+            font-family: "Arial", sans-serif;
+            font-size: 48px;
+            color: #c21010;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 159, 15), 0 0 0px rgb(232, 191, 26), 0 0 80px rgb(255, 153, 0), 0 0 100px rgb(255, 191, 0), 0 0 4px rgb(255, 242, 0);
+            animation: neon-animation 1.5s ease-in-out infinite alternate;
+        }
+
+        .bu {
+            color: white;
+            text-shadow: 3px 4px 4px rgba(2, 0, 0, 6.5);
+        }
+
+        .cap {
+            font-size: 9vh;
+        }
+        .second {
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        .rules{
+            padding-top:11vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/bundelkhand-university-logo.png" alt="University Logo">
+            <h1 class="bu">Bundelkhand University</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Admin_Login.php" class="button">Admin Login</a>
+                </li>
+                <li>
+                    <a href="Student_Login.php" class="button">Student Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="first">
+            <section class="welcome">
+                <h2 class="neon-text">Welcome</h2>
+                <h5 class="neon-text">To</h5>
+                <h4 class="neon-text"><span class="cap">O</span>nline <span class="cap">V</span>oting <br> <span
+                        class="cap">S</span>ystem</h4>
+            </section>
+        </div>
+        <div class="second">
+            <div class="rules">
+                <h1>College Election Rules</h1>
+
+                <h2>1. Eligibility</h2>
+                <p>To participate in the college election, you must meet the following eligibility criteria:</p>
+                <ul>
+                    <li>Be a currently enrolled student at the college.</li>
+                    <li>Have a valid student ID.</li>
+                    <li>Meet any additional requirements set by the college administration.</li>
+                </ul>
+
+                <h2>2. Candidacy</h2>
+                <p>If you wish to run for a position in the college election, you must:</p>
+                <ul>
+                    <li>Submit your nomination within the specified deadline.</li>
+                    <li>Provide all necessary information, including your name, student ID, and the position you are
+                        running
+                        for.</li>
+                    <li>Abide by the campaign rules and regulations set by the college.</li>
+                </ul>
+
+                <h2>3. Campaigning</h2>
+                <p>During the campaign period, candidates must adhere to the following guidelines:</p>
+                <ul>
+                    <li>Respect the college's code of conduct and maintain a positive and respectful campaign
+                        environment.
+                    </li>
+                    <li>Avoid spreading false information or engaging in personal attacks against other candidates.</li>
+                    <li>Comply with any restrictions on campaign materials, such as posters, banners, or online
+                        advertisements.</li>
+                </ul>
+
+                <h2>4. Voting</h2>
+                <p>When casting your vote in the college election, remember the following:</p>
+                <ul>
+                    <li>Only currently enrolled students are eligible to vote.</li>
+                    <li>Each student is allowed to vote once.</li>
+                    <li>Follow the specified voting procedure and use the designated voting method (e.g., online voting,
+                        paper ballot).</li>
+                    <li>Respect the privacy of other voters and maintain the integrity of the voting process.</li>
+                </ul>
+
+                <h2>5. Election Results</h2>
+                <p>The election results will be announced on a specified date and made available to all students.</p>
+                <p>In case of any disputes or concerns regarding the election process, students can reach out to the
+                    election committee or the college administration for clarification or resolution.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
